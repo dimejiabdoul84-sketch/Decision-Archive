@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 
@@ -97,11 +94,11 @@ function App() {
         ))}
       </section>
 
-      <button onClick={AddRecord}>Add Record</button>
+      <button onClick={AddRecord}>add Record</button>
       <button onClick={() => console.log(findRecordById(3))}>Find Record</button>
 
       <section>
-        <h2>Add New Record</h2>
+        <h2>add New Record</h2>
 
         <input
           type="text"
@@ -109,7 +106,6 @@ function App() {
           value={titleInput}
           onChange={(e) => setTitleInput(e.target.value)}
         />
-        <p>You typed: {titleInput}</p>
 
         <select value={typeInput} onChange={(e) => setTypeInput(e.target.value)}>
           <option value="Decision Extract">Decision Extract</option>
@@ -124,14 +120,14 @@ function App() {
           value={dateInput}
           onChange={(e) => setDateInput(e.target.value)}
         />
-        <p>You selected: {typeInput}</p>
+        <p> {typeInput}</p>
 
         <textarea
           placeholder="Enter summary"
           value={summaryInput}
           onChange={(e) => setSummaryInput(e.target.value)}
         />
-        <p>you typed: {summaryInput}</p>
+        <p>: {summaryInput}</p>
       </section>
 
       <div className="ticks"></div>
